@@ -1,7 +1,7 @@
 {
-  "name": "about-me",
+  "name": "Homepage",
   "version": "1.0.0",
-  "description": "Page about me",
+  "description": "My homepage",
   "scripts": {
     "build": "webpack --config webpack/webpack.config.prod.js  --colors",
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
