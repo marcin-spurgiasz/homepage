@@ -1,0 +1,76 @@
+@import "./variables";
+
+.tic-tac-toe-container {
+    width: 100%;
+    position: relative;
+
+    .tic-tac-toe-backdrop {
+        background-color: #fafafa;
+        width: 100%;
+        height: calc(100% - 40px);
+        z-index: 1;
+        display: none;
+    }
+
+    .show-backdrop {
+        position: absolute;
+        opacity: 0.7;
+        text-align: center;
+        font-size: 2rem;
+        padding: 7rem;
+        color: $accent-color-2;
+        transition: 100ms linear;
+        display: block;
+    }
+
+    .tic-tac-toe-grid{
+        display: grid;
+        grid-template: repeat(3,100px)/repeat(3,1fr);
+        grid-gap: 5px;
+        background: $logo-color;
+        cursor: pointer;
+        border: 5px solid $logo-color;
+    }
+
+    .tic-tac-toe-main {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background: $logo-color;
+        margin-bottom: 3px;
+        padding: 0.5rem;
+
+        .tic-tac-toe-description {
+            color: $accent-color-2;
+            font-weight: 600;
+        }
+
+        button {
+            background: $accent-color-1;
+            cursor: pointer;
+            color: $font-color;
+            border: none;
+            transition: 100ms linear;
+            padding: 0.25rem 0.5rem;
+
+            &:hover {
+                background: $accent-color-1;
+                color: $logo-color;
+                transition: 100ms linear;
+            }
+        }
+    }
+
+    .tic-tac-toe {
+        background: $font-color; 
+        font-size: 2rem; 
+        color: #222;
+        transition: 300ms linear;
+
+        &:hover {
+            background: #fafafa;
+            transition: 300ms linear;
+        }       
+    }
+}

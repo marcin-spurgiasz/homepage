@@ -1,0 +1,26 @@
+.sidebar-menu--pulse-element {
+    -webkit-animation: pulse 2s ease-in-out infinite both, show-up 3s linear both;
+	animation: pulse 2s ease-in-out infinite both, show-up 3s linear both;
+}
+
+.sidebar-menu--show-element {
+    -webkit-animation: show-up 5s linear both;
+	animation: show-up 5s linear both;
+}
+
+.sidebar-menu--show-title {
+	-webkit-animation: show-title 2s ease-in-out both;
+    animation: show-title 2s ease-in-out both;
+}
+
+.slide-right {
+	-webkit-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.text-header--typing {
+  -webkit-animation: typing 1.5s steps(50, end), blink .5s step-end infinite alternate;
+  animation: typing 1.5s steps(50, end), blink .5s step-end infinite alternate;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
