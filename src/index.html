@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
+    <meta name="description" content="My homepage">
+    <meta name="keywords" content="HTML, SCSS, JavaScript, RWD, Github">
+    <meta name="author" content="Marcin Spurgiasz">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,14 +27,19 @@
                         <i class="fab fa-node sidebar-menu-element--small sidebar-menu--show-element"></i>
                     </div>
                     <ul class="sidebar-menu-list">
-                        <li class="sidebar-menu-item slide-right"><a href="#start" id="link-start">START</a></li>
-                        <li class="sidebar-menu-item slide-right"><a href="#about-me" id="link-about-me">ABOUT ME</a></li>
-                        <li class="sidebar-menu-item slide-right"><a href="#projects" id="link-projects">PROJECTS</a></li>
-                        <li class="sidebar-menu-item slide-right"><a href="#contact" id="link-contact">CONTACT</a></li>
+                        <li class="sidebar-menu-item slide-right"><a href="#start" id="link-start" aria-label="Start">START</a>
+                        </li>
+                        <li class="sidebar-menu-item slide-right"><a href="#about-me" id="link-about-me"
+                                                                     aria-label="About me">ABOUT ME</a></li>
+                        <li class="sidebar-menu-item slide-right"><a href="#projects" id="link-projects"
+                                                                     aria-label="Projects">PROJECTS</a></li>
+                        <li class="sidebar-menu-item slide-right"><a href="#contact" id="link-contact"
+                                                                     aria-label="Contact">CONTACT</a></li>
                     </ul>
                     <div class="sidebar-menu-footer">
-                        <a href="https://www.linkedin.com/in/marcin-spurgiasz/"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/marcin-spurgiasz"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/marcin-spurgiasz/" aria-label="Linkedin"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/marcin-spurgiasz" aria-label="Github"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="sidebar-chain">
@@ -100,7 +108,8 @@
                 <div class="main-section-header text-header text-header--typing projects">PROJECTS</div>
                 <div class="main-section-content flex-center">
                     <div class="project-item">
-                        <a href="https://en-cars.herokuapp.com/"><img src="public/en-cars.PNG"></a>
+                        <a href="https://en-cars.herokuapp.com/" aria-label="En-cars"><img src="public/en-cars.PNG"
+                                                                                           alt="en-cars"></a>
                         <label class="flex-center">EN-CARS</label>
                     </div>
                 </div>
