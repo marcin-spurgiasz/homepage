@@ -126,12 +126,11 @@ window.addEventListener('scroll', runOnScroll);
 window.addEventListener('load', animateContent);
 
 function animateContent() {
-    const startOffset = 0;
-    const aboutMeOffset = 762;
-    const projectOffset = 1523;
-    const contactOffset = 2285;
+    const startOffset = sections[0].offsetTop;
+    const aboutMeOffset = sections[1].offsetTop;
+    const projectOffset = sections[2].offsetTop;
+    const contactOffset = sections[3].offsetTop;
     if (currDot) currDot.classList.remove('bar-dot-active');
-
     switch (Math.round(window.pageYOffset)) {
         case startOffset: {
             currDot = dots[0];
@@ -141,7 +140,6 @@ function animateContent() {
         case aboutMeOffset: {
             currDot = dots[1];
             currDot.classList.add('bar-dot-active');
-
             break;
         }
         case projectOffset: {
@@ -155,13 +153,11 @@ function animateContent() {
             break;
         }
     }
-
-
 }
 
 function runOnScroll() {
     setTimeout(() => {
         animateContent();
     }, 0);
-};
+}
 
