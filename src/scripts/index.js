@@ -155,9 +155,16 @@ function animateContent() {
     }
 }
 
-function runOnScroll() {
+// var scrollY = window.pageYOffset;
+
+function runOnScroll(event) {
     setTimeout(() => {
         animateContent();
     }, 0);
+    // var sectionOffsetArr = sections.map(section => section.offsetTop);
+    // var direction = window.pageYOffset > scrollY ? 'DOWN' : 'UP';
+    // scrollY = window.pageYOffset;
+    //
+    // direction === 'DOWN' ? window.scrollTo(0,sectionOffsetArr[1], 'auto') : window.scrollTo(0,sectionOffsetArr[0], 'auto');
 }
 
